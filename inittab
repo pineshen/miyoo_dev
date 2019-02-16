@@ -21,6 +21,7 @@
 ::sysinit:/bin/mount -a
 ::sysinit:/bin/hostname -F /etc/hostname
 ::sysinit:/bin/mount /dev/mmcblk0p3 /mnt -t vfat -o rw,utf8
+::sysinit:/sbin/swapon /dev/mmcblk0p2
 # now run any rc scripts
 ::sysinit:/etc/init.d/rcS
 tty1::respawn:/etc/main
